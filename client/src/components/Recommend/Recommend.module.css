@@ -1,0 +1,58 @@
+.recommend {
+  margin: 4rem 0rem;
+  background-image: linear-gradient(#5a5a5a65, #7474745d),
+    url("https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.recommend h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.recommend h1::first-letter {
+  color: #f34100;
+}
+
+.recommend p {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.recommend button {
+  border: none;
+  outline: none;
+  padding: 1rem 1.2rem;
+  color: #ffffff;
+  background-color: #f34100;
+  cursor: pointer;
+}
+
+.recommend button:hover {
+  background-color: #ff672f;
+}
+
+@media screen and (max-width: 750px) {
+  .recommend h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .recommend p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+  }
+}

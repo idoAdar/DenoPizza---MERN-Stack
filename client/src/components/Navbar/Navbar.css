@@ -1,0 +1,85 @@
+.nav_container {
+  height: 10vh;
+  background-color: #000f0f;
+}
+
+.links_container {
+  width: 20rem;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+}
+
+.links_container i {
+  color: #f34100;
+}
+
+.links_container li:nth-of-type(1) {
+  color: #fff;
+  position: absolute;
+  left: 3%;
+}
+
+.nav_container ul a {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.active {
+  color: #f34100;
+}
+
+a {
+  color: #fff;
+}
+
+@media screen and (max-width: 400px) {
+  .nav_container {
+    position: relative;
+  }
+
+  .burger_container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(5%, -50%);
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .burger_container div {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+
+  .links_container {
+    flex-direction: column;
+    position: fixed;
+    background-color: #000f0f;
+    height: 100vh;
+    width: 100%;
+    clip-path: circle(100px at 170% -35%);
+    -webkit-clip-path: circle(100px at 170% -35%);
+    transition: all 1s ease-out;
+    z-index: 90;
+  }
+
+  .links_container li:nth-of-type(1) {
+    display: none;
+  }
+
+  .nav_container ul a {
+    font-size: 1.5rem;
+  }
+
+  .openNav {
+    clip-path: circle(800px at 50% 50%);
+    -webkit-clip-path: circle(800px at 50% 50%);
+  }
+}
